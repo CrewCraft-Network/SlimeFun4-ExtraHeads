@@ -31,7 +31,7 @@ public class HeadListener implements Listener {
             chance *= plugin.getCfg().getDouble("options.sword-of-beheading-multiplier");
         }
 
-        if (Math.random() * 100 < chance) {
+        if (Math.random() * 10 < chance) {
             e.getEntity().getWorld().dropItemNaturally(e.getEntity().getLocation(), plugin.getMobDrops().get(e.getEntityType()));
         }
     }
